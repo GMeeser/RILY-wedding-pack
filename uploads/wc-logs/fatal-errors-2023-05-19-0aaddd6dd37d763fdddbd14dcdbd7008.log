@@ -1,0 +1,60 @@
+2023-05-19T13:08:03+00:00 CRITICAL syntax error, unexpected end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\functions.php on line 18
+
+2023-05-19T13:08:18+00:00 CRITICAL syntax error, unexpected end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\functions.php on line 18
+
+2023-05-19T13:08:44+00:00 CRITICAL syntax error, unexpected end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\functions.php on line 18
+
+2023-05-19T13:09:47+00:00 CRITICAL Uncaught Error: Failed opening required 'RSVP.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\bootstrap.php:2
+Stack trace:
+#0 C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\functions.php(18): require_once()
+#1 C:\Users\grant\Local Sites\rily\app\public\wp-settings.php(591): include('C:\\Users\\grant\\...')
+#2 C:\Users\grant\Local Sites\rily\app\public\wp-config.php(102): require_once('C:\\Users\\grant\\...')
+#3 C:\Users\grant\Local Sites\rily\app\public\wp-load.php(50): require_once('C:\\Users\\grant\\...')
+#4 C:\Users\grant\Local Sites\rily\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\grant\\...')
+#5 C:\Users\grant\Local Sites\rily\app\public\wp-admin\users.php(11): require_once('C:\\Users\\grant\\...')
+#6 {main}
+  thrown in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\bootstrap.php on line 2
+
+2023-05-19T13:10:17+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class RSVP does not have a method "new_modify_user_table_row" in C:\Users\grant\Local Sites\rily\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\grant\Local Sites\rily\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#1 C:\Users\grant\Local Sites\rily\app\public\wp-admin\includes\class-wp-users-list-table.php(624): apply_filters('manage_users_cu...', '', 'rsvp', 1)
+#2 C:\Users\grant\Local Sites\rily\app\public\wp-admin\includes\class-wp-users-list-table.php(415): WP_Users_List_Table->single_row(Object(WP_User), '', '', '1')
+#3 C:\Users\grant\Local Sites\rily\app\public\wp-admin\includes\class-wp-list-table.php(1471): WP_Users_List_Table->display_rows()
+#4 C:\Users\grant\Local Sites\rily\app\public\wp-admin\includes\class-wp-list-table.php(1398): WP_List_Table->display_rows_or_placeholder()
+#5 C:\Users\grant\Local Sites\rily\app\public\wp-admin\users.php(657): WP_List_Table->display()
+#6 {main}
+  thrown in C:\Users\grant\Local Sites\rily\app\public\wp-includes\class-wp-hook.php on line 308
+
+2023-05-19T14:17:46+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 58
+
+2023-05-19T14:35:37+00:00 CRITICAL Uncaught Error: Call to undefined function del() in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\WooCommerceEdits.php:9
+Stack trace:
+#0 C:\Users\grant\Local Sites\rily\app\public\wp-includes\class-wp-hook.php(308): WooCommerceEdits->remove_shipping_address(Array)
+#1 C:\Users\grant\Local Sites\rily\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 C:\Users\grant\Local Sites\rily\app\public\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-profile.php(147): apply_filters('woocommerce_cus...', Array)
+#3 C:\Users\grant\Local Sites\rily\app\public\wp-content\plugins\woocommerce\includes\admin\class-wc-admin-profile.php(166): WC_Admin_Profile->get_customer_meta_fields()
+#4 C:\Users\grant\Local Sites\rily\app\public\wp-includes\class-wp-hook.php(308): WC_Admin_Profile->add_customer_meta_fields(Object(WP_User))
+#5 C:\Users\grant\Local Sites\rily\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\grant\Local Sites\rily\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\Users\grant\Local Sites\rily\app\public\wp-admin\user-edit.php(844): do_action('show_user_profi...', Object(WP_User))
+#8 C:\Users\grant\Local Sites\rily\app\public\wp-admin\profile.php(18): require_once('C:\\Users\\grant\\...')
+#9 {main}
+  thrown in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\WooCommerceEdits.php on line 9
+
+2023-05-19T14:48:33+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 28
+
+2023-05-19T14:50:34+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 28
+
+2023-05-19T14:52:34+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 28
+
+2023-05-19T14:53:35+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 29
+
+2023-05-19T14:54:32+00:00 CRITICAL syntax error, unexpected token "public", expecting end of file in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 29
+
+2023-05-19T14:55:06+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 44
+
+2023-05-19T14:55:18+00:00 CRITICAL Unparenthesized `a ? b : c ? d : e` is not supported. Use either `(a ? b : c) ? d : e` or `a ? b : (c ? d : e)` in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 20
+
+2023-05-19T15:04:55+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 22
+

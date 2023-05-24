@@ -1,0 +1,20 @@
+2023-05-22T15:17:05+00:00 CRITICAL syntax error, unexpected token "return" in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 34
+
+2023-05-22T15:39:43+00:00 CRITICAL Cannot redeclare RSVP::add_plus_one_permission_to_user_settings_wp_admin() in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 217
+
+2023-05-22T15:39:44+00:00 CRITICAL Cannot redeclare RSVP::add_plus_one_permission_to_user_settings_wp_admin() in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 217
+
+2023-05-22T15:49:39+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+
+2023-05-22T15:50:39+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+
+2023-05-22T15:50:58+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+
+2023-05-22T15:50:59+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+
+2023-05-22T15:51:07+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+
+2023-05-22T15:51:39+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+
+2023-05-22T15:52:05+00:00 CRITICAL syntax error, unexpected token "(", expecting variable in C:\Users\grant\Local Sites\rily\app\public\wp-content\themes\libretto-child\includes\RSVP.php on line 135
+

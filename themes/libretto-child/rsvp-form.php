@@ -30,7 +30,7 @@ foreach ( $args['user_ids'] as $user_id ) {
 					</label>
 				</div>
 				<div class="col-3" >
-					<?php if ( RSVP::can_have_plus_one( $member->ID ) ) : ?>
+					<?php if ( RSVP::can_have_plus_one( $member->ID ) && ! RSVP::has_plus_one( $member->ID) ) : ?>
 					<button type="button" onclick="add_plus_one_form( this, <?php echo esc_attr( $member->ID ); ?>)" id="add_plus_one_<?php echo esc_attr( $member->ID ); ?>"><?php _e( 'Add +1', 'libretto-child' ); ?></button>
 					<?php endif; ?>
 				</div>

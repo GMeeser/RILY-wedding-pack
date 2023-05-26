@@ -34,8 +34,23 @@ h1 {
 	margin-left: -45%;
 }
 
-body{ 
+body { 
 	background-color: #D9D9D9;
+	position: relative;
+}
+
+body:before {
+	content: url( 'assets/img/floral-work-part-2-1.png' );
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+body:after {
+	content: url( 'assets/img/floral-work-part-2-2.png' );
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .menu-wrapper ul li a {

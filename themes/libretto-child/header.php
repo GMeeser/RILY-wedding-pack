@@ -74,9 +74,7 @@
 					<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
 
 				<?php elseif ( is_single() ) : // Show the post title and metadata for posts ?>
-					<div class="entry-meta">
-						<!-- <?php libretto_posted_on(); ?> -->
-					</div><!-- .entry-meta -->
+					<!-- .entry-meta -->
 					<h1><?php the_title(); ?></h1>
 
 				<?php elseif ( is_page() ) : // Show the page title for pages ?>

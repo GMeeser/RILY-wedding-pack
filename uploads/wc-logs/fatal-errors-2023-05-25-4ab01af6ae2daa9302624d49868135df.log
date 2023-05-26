@@ -1,0 +1,75 @@
+2023-05-25T09:12:39+00:00 CRITICAL Uncaught Error: Failed opening required 'RSVPShortCode.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/bootstrap.php:5
+Stack trace:
+#0 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/functions.php(20): require_once()
+#1 /Users/grantmeeser/Local Sites/rily/app/public/wp-settings.php(591): include('/Users/grantmee...')
+#2 /Users/grantmeeser/Local Sites/rily/app/public/wp-config.php(102): require_once('/Users/grantmee...')
+#3 /Users/grantmeeser/Local Sites/rily/app/public/wp-load.php(50): require_once('/Users/grantmee...')
+#4 /Users/grantmeeser/Local Sites/rily/app/public/wp-blog-header.php(13): require_once('/Users/grantmee...')
+#5 /Users/grantmeeser/Local Sites/rily/app/public/index.php(17): require('/Users/grantmee...')
+#6 {main}
+  thrown in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/bootstrap.php on line 5
+
+2023-05-25T09:12:39+00:00 CRITICAL Uncaught Error: Failed opening required 'RSVPShortCode.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/bootstrap.php:5
+Stack trace:
+#0 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/functions.php(20): require_once()
+#1 /Users/grantmeeser/Local Sites/rily/app/public/wp-settings.php(591): include('/Users/grantmee...')
+#2 /Users/grantmeeser/Local Sites/rily/app/public/wp-config.php(102): require_once('/Users/grantmee...')
+#3 /Users/grantmeeser/Local Sites/rily/app/public/wp-load.php(50): require_once('/Users/grantmee...')
+#4 /Users/grantmeeser/Local Sites/rily/app/public/wp-blog-header.php(13): require_once('/Users/grantmee...')
+#5 /Users/grantmeeser/Local Sites/rily/app/public/index.php(17): require('/Users/grantmee...')
+#6 {main}
+  thrown in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/bootstrap.php on line 5
+
+2023-05-25T09:13:05+00:00 CRITICAL syntax error, unexpected token "}" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php on line 17
+
+2023-05-25T09:13:05+00:00 CRITICAL syntax error, unexpected token "}" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php on line 17
+
+2023-05-25T09:17:12+00:00 CRITICAL Uncaught Error: Undefined constant "self" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php:5
+Stack trace:
+#0 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/bootstrap.php(6): RSVPShortCode->init()
+#1 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/functions.php(20): require_once('/Users/grantmee...')
+#2 /Users/grantmeeser/Local Sites/rily/app/public/wp-settings.php(591): include('/Users/grantmee...')
+#3 /Users/grantmeeser/Local Sites/rily/app/public/wp-config.php(102): require_once('/Users/grantmee...')
+#4 /Users/grantmeeser/Local Sites/rily/app/public/wp-load.php(50): require_once('/Users/grantmee...')
+#5 /Users/grantmeeser/Local Sites/rily/app/public/wp-blog-header.php(13): require_once('/Users/grantmee...')
+#6 /Users/grantmeeser/Local Sites/rily/app/public/index.php(17): require('/Users/grantmee...')
+#7 {main}
+  thrown in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php on line 5
+
+2023-05-25T09:17:12+00:00 CRITICAL Uncaught Error: Undefined constant "self" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php:5
+Stack trace:
+#0 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/bootstrap.php(6): RSVPShortCode->init()
+#1 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/functions.php(20): require_once('/Users/grantmee...')
+#2 /Users/grantmeeser/Local Sites/rily/app/public/wp-settings.php(591): include('/Users/grantmee...')
+#3 /Users/grantmeeser/Local Sites/rily/app/public/wp-config.php(102): require_once('/Users/grantmee...')
+#4 /Users/grantmeeser/Local Sites/rily/app/public/wp-load.php(50): require_once('/Users/grantmee...')
+#5 /Users/grantmeeser/Local Sites/rily/app/public/wp-blog-header.php(13): require_once('/Users/grantmee...')
+#6 /Users/grantmeeser/Local Sites/rily/app/public/index.php(17): require('/Users/grantmee...')
+#7 {main}
+  thrown in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php on line 5
+
+2023-05-25T11:17:24+00:00 CRITICAL Uncaught Error: Call to undefined function wc_enqueue_script() in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php:24
+Stack trace:
+#0 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/shortcodes.php(355): RSVPShortCode->rsvp_form_renders('', '', 'rsvp_form')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(rsvp_f...', 'do_shortcode_ta...', '[rsvp_form/]\n')
+#3 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/class-wp-hook.php(308): do_shortcode('[rsvp_form/]\n')
+#4 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/plugin.php(205): WP_Hook->apply_filters('[rsvp_form/]\n', Array)
+#5 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/post-template.php(255): apply_filters('the_content', '<!-- wp:shortco...')
+#6 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto/content-single.php(12): the_content()
+#7 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/template.php(785): require('/Users/grantmee...')
+#8 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/template.php(718): load_template('/Users/grantmee...', false, Array)
+#9 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#10 /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto/single.php(15): get_template_part('content', 'single')
+#11 /Users/grantmeeser/Local Sites/rily/app/public/wp-includes/template-loader.php(106): include('/Users/grantmee...')
+#12 /Users/grantmeeser/Local Sites/rily/app/public/wp-blog-header.php(19): require_once('/Users/grantmee...')
+#13 /Users/grantmeeser/Local Sites/rily/app/public/index.php(17): require('/Users/grantmee...')
+#14 {main}
+  thrown in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php on line 24
+
+2023-05-25T11:58:27+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/RSVPShortCode.php on line 83
+
+2023-05-25T18:23:01+00:00 CRITICAL syntax error, unexpected identifier "∏" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/WordPressEdits.php on line 13
+
+2023-05-25T18:23:01+00:00 CRITICAL syntax error, unexpected identifier "∏" in /Users/grantmeeser/Local Sites/rily/app/public/wp-content/themes/libretto-child/includes/WordPressEdits.php on line 13
+

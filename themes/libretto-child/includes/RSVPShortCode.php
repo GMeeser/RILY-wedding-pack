@@ -7,27 +7,32 @@ class RSVPShortCode {
 
 	public function rsvp_form_renders( $attr ) {
 		$family_group = [];
-		if ( ! empty( $_REQUEST['id'] ) ) {
+		if ( empty( $_REQUEST['id'] ) && is_user_logged_in() ) {
+			$user = get_user_by( 'id', get_current_user_id() );
+		} elseif ( ! empty( $_REQUEST['id'] ) ) {
 			$user = RSVP::get_user_from_rsvp_id( $_REQUEST['id'] );
-			if ( ! empty( $user ) ) {
-				$family_group = RSVP::get_family_group( $user->ID );
-				array_push( $family_group, $user->ID );
-			}
+		} else {
+			return __( 'Invalid Link, please try again', 'libretto-child' );
+		}
 
-			foreach ( $family_group as $member ) {
-				if ( ! empty( $_REQUEST[ 'rsvp_' . $member ] ) ) {
-					$message = $this->process_form_post();
-					ob_start();
-					locate_template(
-						'rsvp-form-submitted.php',
-						true,
-						true,
-						[
-							'message' => $message,
-						]
-					);
-					return ob_get_clean();
-				}
+		if ( ! empty( $user ) ) {
+			$family_group = RSVP::get_family_group( $user->ID );
+			array_push( $family_group, $user->ID );
+		}
+
+		foreach ( $family_group as $member ) {
+			if ( ! empty( $_REQUEST[ 'rsvp_' . $member ] ) ) {
+				$message = $this->process_form_post();
+				ob_start();
+				locate_template(
+					'rsvp-form-submitted.php',
+					true,
+					true,
+					[
+						'message' => $message,
+					]
+				);
+				return ob_get_clean();
 			}
 		}
 
@@ -58,16 +63,20 @@ class RSVPShortCode {
 	}
 
 	public function process_form_post() {
-		if ( empty( $_REQUEST['id'] ) ) {
-			return 'invalid request';
+		if ( empty( $_REQUEST['id'] ) && is_user_logged_in() ) {
+			$user = get_user_by( 'id', get_current_user_id() );
+		} elseif ( ! empty( $_REQUEST['id'] ) ) {
+			$user = RSVP::get_user_from_rsvp_id( $_REQUEST['id'] );
+		} else {
+			return __( 'Invalid request', 'libretto-child' );
 		}
-		$user = RSVP::get_user_from_rsvp_id( $_REQUEST['id'] );
+
 		if ( ! empty( $user ) ) {
 			$family_group = RSVP::get_family_group( $user->ID );
 			array_push( $family_group, $user->ID );
 		}
 		if ( empty( $family_group ) ) {
-			return 'invalid request';
+			return __( 'Invalid request', 'libretto-child' );
 		}
 
 		// Check all emails addresses first
@@ -121,6 +130,13 @@ class RSVPShortCode {
 						$username,
 						wp_generate_password( 12, true, true ),
 						$email
+					);
+
+					wp_update_user(
+						[
+							'ID'           => $new_user_id,
+							'display_name' => $first_name . ' ' . $last_name,
+						]
 					);
 
 					update_user_meta( $new_user_id, 'first_name', $first_name );

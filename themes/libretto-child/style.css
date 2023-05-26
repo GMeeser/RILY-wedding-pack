@@ -73,6 +73,12 @@ body{
 
 .search-form {
 	display:none;
+label {
+	width:auto;
+}
+
+span.password-input, .woocommerce form .form-row {
+	width: 100% !important;
 }
 
 form#rsvp_form .hidden {

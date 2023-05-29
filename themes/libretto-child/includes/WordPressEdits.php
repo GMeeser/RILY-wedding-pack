@@ -22,13 +22,16 @@ class WordPressEdits {
 			return;
 		}
 
-		foreach ( $exception_pages as $exception ) {
-			if ( 1 === preg_match( $exception, $_SERVER['REQUEST_URI'] ) ) {
-				return;
+		if ( ! empty( $_SERVER['REQUEST_URI'] ) ) {
+			foreach ( $exception_pages as $exception ) {
+				if ( 1 === preg_match( $exception, $_SERVER['REQUEST_URI'] ) ) {
+					return;
+				}
 			}
 		}
 
-		wp_redirect( '/my-account/' );
+		wp_safe_redirect( '/my-account/' );
+		die();
 	}
 
 	public function add_rsvp_page() : void {

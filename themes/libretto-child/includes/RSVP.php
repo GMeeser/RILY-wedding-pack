@@ -69,7 +69,7 @@ class RSVP {
 	 * @param integer|null $user_id
 	 * @return void
 	 */
-	public static function RSVP( bool $going, ?int $user_id ) : void {
+	public static function set_response( bool $going, ?int $user_id ) : void {
 		$user_id = $user_id ?? get_current_user_id();
 		if ( empty( $user_id ) ) {
 			return;
@@ -471,10 +471,10 @@ class RSVP {
 
 		switch ( $_REQUEST['rsvp'] ) {
 			case 'yes':
-				self::RSVP( true, $user_id );
+				self::set_response( true, $user_id );
 				break;
 			case 'no':
-				self::RSVP( false, $user_id );
+				self::set_response( false, $user_id );
 				break;
 		}
 

@@ -107,9 +107,9 @@ class RSVPShortCode {
 			// Add RSVP for user
 			if ( ! empty( $_REQUEST[ 'rsvp_' . $member_id ] ) ) {
 				if ( 'yes' === $_REQUEST[ 'rsvp_' . $member_id ] ) {
-					RSVP::RSVP( true, $member_id );
+					RSVP::set_response( true, $member_id );
 				} else {
-					RSVP::RSVP( false, $member_id );
+					RSVP::set_response( false, $member_id );
 				}
 			}
 
@@ -143,7 +143,7 @@ class RSVPShortCode {
 					update_user_meta( $new_user_id, 'last_name', $last_name );
 
 					RSVP::add_plus_one( $new_user_id, $member_id );
-					RSVP::RSVP( true, $new_user_id );
+					RSVP::set_response( true, $new_user_id );
 				}
 			}
 

@@ -166,7 +166,9 @@ class RSVP {
 		$user_id = $user_id ?? get_current_user_id();
 
 		if ( ! empty( get_user_meta( $user_id, 'plus_one_permission', true ) ) ) {
-			return true;
+			if ( 'yes' === get_user_meta( $user_id, 'plus_one_permission', true ) ) {
+				return true;
+			}
 		}
 
 		return false;

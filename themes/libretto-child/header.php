@@ -75,10 +75,10 @@
 
 				<?php elseif ( is_single() ) : // Show the post title and metadata for posts ?>
 					<!-- .entry-meta -->
-					<h1><?php the_title(); ?></h1>
+					<!-- <h1><?php the_title(); ?></h1> -->
 
 				<?php elseif ( is_page() ) : // Show the page title for pages ?>
-					<h1><?php the_title(); ?></h1>
+					<!-- <h1><?php the_title(); ?></h1> -->
 
 				<?php elseif ( is_archive() ) : // Show archive title
 					the_archive_title( '<h1>', '</h1>' );

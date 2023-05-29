@@ -33,9 +33,6 @@ class WooCommerceEdits {
 		unset( $items['payment-methods'] );
 		unset( $items['edit-address'] );
 
-		print_r( $items );
-		die();
-
 		return $items;
 	}
 }

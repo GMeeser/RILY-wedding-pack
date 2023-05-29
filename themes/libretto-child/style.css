@@ -5,7 +5,7 @@ Description:  Wedding Pack for Libretto theme
 Author:       G. Meeser
 Author URI:   http://example.com
 Template:     libretto
-Version:      1.0.0
+Version:      1.0.6
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -27,9 +27,11 @@ h1 {
 	font-size: 80px;
 }
 
-.site-title a, .mobile-site-title {
+.site-title a, #site-navigation .mobile-site-title a {
 	color: #E1B996;
 	font-family: edwardianScript, cursive;
+	padding: 0px;
+	/* display: auto; */
 }
 
 

@@ -21,14 +21,15 @@
 	<body <?php body_class(); ?>>
 
 		<header class="nav-bar">
-			<?php if ( ! is_home() ) : // On the blog index page the site title is displayed below nav-bar ?>
 			<div class="site-branding">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			</div>
-			<?php endif; ?>
 
 			<nav id="site-navigation" class="navigation-main" role="navigation">
-				<div class="menu-toggle"><span class="mobile-site-title"><?php bloginfo( 'name' ); ?></span>
+				<div class="menu-toggle">
+					<span class="mobile-site-title">
+						<a href="/" ><?php bloginfo( 'name' ); ?></a>
+					</span>
 					<button id="menu-icon">
 					  <span></span>
 					  <span></span>

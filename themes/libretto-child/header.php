@@ -64,6 +64,7 @@
 			>
 
 				<!-- PAGE HEADER -->
+				<?php if ( ! is_single() && ! is_page() ) : // Show the post title and metadata for posts ?>
 				<div class="title-block">
 
 				<?php if ( is_home() ) : // Show the site title & tagline ?>
@@ -72,13 +73,6 @@
 					endif; ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<h3 class="site-description"><?php bloginfo( 'description' ); ?></h3>
-
-				<?php elseif ( is_single() ) : // Show the post title and metadata for posts ?>
-					<!-- .entry-meta -->
-					<!-- <h1><?php the_title(); ?></h1> -->
-
-				<?php elseif ( is_page() ) : // Show the page title for pages ?>
-					<!-- <h1><?php the_title(); ?></h1> -->
 
 				<?php elseif ( is_archive() ) : // Show archive title
 					the_archive_title( '<h1>', '</h1>' );
@@ -94,7 +88,7 @@
 					<h3><?php printf( esc_html__( 'You searched for %s', 'libretto' ), '<span>' . get_search_query() . '</span>' ); ?></h3>
 
 				<?php endif; ?>
-
-				</div><!-- .title-block -->
+			</div><!-- .title-block -->
+			<?php endif; ?>
 			</header><!-- #masthead -->
 		<?php endif; ?>

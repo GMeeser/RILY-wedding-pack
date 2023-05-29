@@ -16,78 +16,62 @@ Text Domain:  libretto-child
 
 @import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+@font-face {
+	font-family: edwardianScript;
+	src: url(assets/ITCEDSCR.TTF);
+  }
+
 h1 { 
-	font-family: 'Elsie Swash Caps', cursive;
+	font-family: edwardianScript, cursive;
 	color: #E1B996;
 	font-size: 80px;
 }
 
-.title-block:after {
-	content: '';
-	background-color: #E1B996;
-	height:2px;
-	width: 90%;
-	display: inline-block;
-	position: absolute;
-	margin: auto;
-	left: 50%;
-	margin-left: -45%;
+.site-title a, .mobile-site-title {
+	color: #E1B996;
+	font-family: edwardianScript, cursive;
 }
+
 
 body { 
 	background-color: #D9D9D9;
 	position: relative;
 }
 
-body:before {
-	content: url( 'assets/img/floral-work-part-2-1.png' );
+article:before {
+	background-image: url( 'assets/img/floral-work-part-2-1.png' );
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	bottom: 25px;
+	left: auto;
+	margin-left: 60px;
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:400px;
+	max-width: 400px;
+	height: 400px;
+	max-height:400px
 }
 
-body:after {
-	content: url( 'assets/img/floral-work-part-2-2.png' );
+article:after {
+	background-image: url( 'assets/img/floral-work-part-2-2.png' );
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 55px;
+	left: auto;
+	margin-left: -470px;
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:400px;
+	max-width: 400px;
+	height: 400px;
+	max-height:400px
 }
 
 .menu-wrapper ul li a {
-	font-family: 'Cuprum', sans-serif;
-	color: #7A5697 !important;
-	text-align:center;
-	min-width: 144px;
-	font-size: 24px;
+	color: #E1B996 !important;
 }
 
-.menu-wrapper ul li a:after{
-	content: '';
-	display: inline-block;
-	background-color: #E1B996;
-	width:144px;
-	height: 2px;
-	box-shadow: 0px 4px 3px;
-	position:absolute;
-	top:100%;
-	left:0;
-}
-
-.nav-bar {
-	background-color: #D9D9D9;
-}
-
-.nav-bar .navigation-main {
-	margin: 4rem auto !important;
-    max-width: 680px;
-    padding: 0;
-    width: auto;
-	background-color: #D9D9D9;
-	float: none !important;
-}
-
-.search-form {
-	display:none;
 label {
 	width:auto;
 }
@@ -128,7 +112,23 @@ form#rsvp_form div.buttons button {
 	padding: 1%;
 }
 
-@media ( min-width: 650px ) {
+.woocommerce-MyAccount-navigation  {
+	border: none;
+}
+
+.woocommerce-MyAccount-navigation ul {
+	list-style: none;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+	border: none;
+}
+
+.woocommerce-MyAccount-navigation ul li a, .woocommerce-MyAccount-navigation ul li a:visited {
+	color: #E1B996;
+}
+
+@media ( min-width: 640px ) {
 	.float-container div.col-3 {
 		width: 30%;
 		float: left;
@@ -144,3 +144,76 @@ form#rsvp_form div.buttons button {
 	}
 }
 
+@media ( max-width: 640px ) {
+	h1 { 
+		font-size: 65px;
+	}
+
+	#masthead {
+		margin: 0px;
+	}
+}
+
+@media ( max-width: 600px ) {
+	#wpadminbar {
+		top: -46px;
+	}
+}
+
+@media ( max-width: 920px  ) {
+	article:before, article:after {
+		width: 42vw;
+		height: 42vw;
+	}
+
+	article:before {
+		margin-left: 7vw;
+	}
+
+	article:after {
+		margin-left: -50vw;
+	}
+}
+
+@media ( max-width: 850px ) {
+	article:before, article:after {
+		width: 350px;
+		height: 350px;
+	}
+
+	article:before {
+		left: auto;
+		margin-left: -10px;
+		bottom: 70px;
+	}
+
+	article:after {
+		left: auto;
+		margin-left: -340px;
+		top:95px
+	}
+}
+
+@media ( max-width: 680px ) {
+	article:before, article:after {
+		width: 350px;
+		height: 350px;
+	}
+
+	article:before {
+		right: 5px;
+		bottom: 55px;
+	}
+
+	article:after {
+		left: 5px;
+		margin-left: 0px;
+		top:65px
+	}
+}
+
+@media ( max-width: 640px ) {
+	article:before, article:after {
+		display: none;
+	}
+}
